@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+
+        <h1 class="todo__title">ToDo</h1>
+        <input class="todo__input" type="text" placeholder="I want to...">
+
+        <div class="filter">
+            <div class="filter__btns">
+                <button class="filter__btn">
+                    <div class="filter__btn_text">All</div>
+                </button>
+                <button class="filter__btn">
+                    <div class="filter__btn_text">Done</div>
+                </button>
+                <button class="filter__btn">
+                    <div class="filter__btn_text">Undone</div>
+                </button>
+            </div>
+
+            <div class="filter__sort">
+                <div class="filter__title">Sort by Date</div>
+                <button class="filter__arrow-up"></button>
+                <button class="filter__arrow-down"></button>
+            </div>
+        </div>
+
+        <div class="tasks">
+            <ul class="tasks__list">
+                <li class="tasks__list-item">
+                    <div class="list__start">
+                        <button class="btn__checkbox"></button>
+                        Do something
+                    </div>
+                    <div class="list__end">
+                        13/05/2022
+                        <button class="btn__trash"></button>
+                    </div>
+                </li>
+                <li class="tasks__list-item">
+                    <div class="list__start">
+                        <button class="btn__checkbox"></button>
+                        Do more
+                    </div>
+                    <div class="list__end">
+                        13/05/2022
+                        <button class="btn__trash"></button>
+                    </div>
+                </li>
+                <li class="tasks__list-item">
+                    <div class="list__start">
+                        <button class="btn__checkbox"></button>
+                        Learn JS
+                    </div>
+                    <div class="list__end">
+                        13/05/2022
+                        <button class="btn__trash"></button>
+                    </div>
+                </li>
+                <li class="tasks__list-item">
+                    <div class="list__start">
+                        <button class="btn__checkbox"></button>
+                        Learn React
+                    </div>
+                    <div class="list__end">
+                        13/05/2022
+                        <button class="btn__trash"></button>
+                    </div>
+                </li>
+                <li class="tasks__list-item">
+                    <div class="list__start">
+                        <button class="btn__checkbox"></button>
+                        Authorization
+                    </div>
+                    <div class="list__end">
+                        13/05/2022
+                        <button class="btn__trash"></button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="numbers">
+            <button class="numbers__btn"><<</button>
+            <button class="numbers__btn">1</button>
+            <button class="numbers__btn numbers__btn-active">2</button>
+            <button class="numbers__btn">3</button>
+            <button class="numbers__btn">4</button>
+            <button class="numbers__btn">5</button>
+            <button class="numbers__btn">>></button>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Macondo', cursive;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.todo__title {
+    color: gray;
+    text-align: center;
+    font-size: 40px;
+}
+
+.todo__input {
+    display: block;
+    margin: 20px auto;
+    height: 30px;
+    width: 400px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding: 0 5px;
+    color: #4b4b4b;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filter__btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filter__btn {
+    width: 100px;
+    height: 50px;
+    border: 2px solid #d0d0d0;
+    color: #6b6b6b;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 48px;
+    transform: skewX(-25deg);
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+
+.filter__btn:hover {
+    box-shadow: 3px 3px 20px gray;
+    border: none
+}
+
+.filter__btn_text {
+    transform: skewX(25deg);
+}
+
+.filter__sort {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.filter__title {
+    font-size: 20px;
+    color: #6b6b6b;
+    margin-right: 10px;
+}
+
+.filter__arrow-up {
+    width: 15px;
+    height: 20px;
+    background: url('https://img.icons8.com/plumpy/344/up--v1.png') center center/cover no-repeat;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.filter__arrow-down {
+    width: 15px;
+    height: 20px;
+    background: url('https://img.icons8.com/plumpy/344/down--v1.png') center center/cover no-repeat;
+    border: none;
+    cursor: pointer;
+}
+
+.tasks {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tasks__list {
+    list-style-type: none;
+}
+
+.tasks__list-item {
+    height: 40px;
+    width: 600px;
+    border: 1px solid gray;
+    color: #6b6b6b;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list__start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list__end {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn__checkbox {
+    width: 15px;
+    height: 20px;
+    background: url('data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZpZXdCb3g9IjAgMCAxNzIgMTcyIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9Im5vbnplcm8iIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0iYnV0dCIgc3Ryb2tlLWxpbmVqb2luPSJtaXRlciIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2UtZGFzaGFycmF5PSIiIHN0cm9rZS1kYXNob2Zmc2V0PSIwIiBmb250LWZhbWlseT0ibm9uZSIgZm9udC13ZWlnaHQ9Im5vbmUiIGZvbnQtc2l6ZT0ibm9uZSIgdGV4dC1hbmNob3I9Im5vbmUiIHN0eWxlPSJtaXgtYmxlbmQtbW9kZTogbm9ybWFsIj48cGF0aCBkPSJNMCwxNzJ2LTE3MmgxNzJ2MTcyeiIgZmlsbD0ibm9uZSI+PC9wYXRoPjxnIGZpbGw9IiNjY2NjY2MiPjxwYXRoIGQ9Ik0zNS44MzMzMywxNC4zMzMzM2MtMTEuNzkyNDIsMCAtMjEuNSw5LjcwNzU4IC0yMS41LDIxLjV2MTAwLjMzMzMzYzAsMTEuNzkyNDMgOS43MDc1OCwyMS41IDIxLjUsMjEuNWgxMDAuMzMzMzNjMTEuNzkyNDMsMCAyMS41LC05LjcwNzU3IDIxLjUsLTIxLjV2LTU3LjMzMzMzaC0xNC4zMzMzM3Y1Ny4zMzMzM2MwLDMuOTc0MjQgLTMuMTkyNDMsNy4xNjY2NyAtNy4xNjY2Nyw3LjE2NjY3aC0xMDAuMzMzMzNjLTMuOTc0MjQsMCAtNy4xNjY2NywtMy4xOTI0MyAtNy4xNjY2NywtNy4xNjY2N3YtMTAwLjMzMzMzYzAsLTMuOTc0MjQgMy4xOTI0MiwtNy4xNjY2NyA3LjE2NjY3LC03LjE2NjY3aDY0LjV2LTE0LjMzMzMzek0xNDYuNzIwNywyOC4wNTA3OGwtNjYuNTk5Niw3MC42MDI4NmwtMjYuMzE1MTEsLTI2LjMxNTFsLTEwLjEzNDExLDEwLjEzNDExbDM2Ljc0MzE2LDM2Ljc0MzE3bDc2LjczMzcyLC04MS4zMjQ4N3oiPjwvcGF0aD48L2c+PC9nPjwvc3ZnPg==') center center/cover no-repeat;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.btn__trash {
+    width: 15px;
+    height: 20px;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+    background: url('data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZpZXdCb3g9IjAgMCAxNzIgMTcyIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9Im5vbnplcm8iIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0iYnV0dCIgc3Ryb2tlLWxpbmVqb2luPSJtaXRlciIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2UtZGFzaGFycmF5PSIiIHN0cm9rZS1kYXNob2Zmc2V0PSIwIiBmb250LWZhbWlseT0ibm9uZSIgZm9udC13ZWlnaHQ9Im5vbmUiIGZvbnQtc2l6ZT0ibm9uZSIgdGV4dC1hbmNob3I9Im5vbmUiIHN0eWxlPSJtaXgtYmxlbmQtbW9kZTogbm9ybWFsIj48cGF0aCBkPSJNMCwxNzJ2LTE3MmgxNzJ2MTcyeiIgZmlsbD0ibm9uZSI+PC9wYXRoPjxnIGZpbGw9IiNjY2NjY2MiPjxwYXRoIGQ9Ik03My45MDYyNSwtMC4yMjM5NmMtMTIuMzQ1NywwIC0yMi41NjM4LDkuNjU4MiAtMjMuNzM5NTgsMjEuNzIzOTZoLTM1LjgzMzMzdjE0LjMzMzMzaDM1LjYwOTM4djAuMjIzOTZoNzIuMTE0NTh2LTAuMjIzOTZoMzUuNjA5Mzh2LTE0LjMzMzMzaC0zNS44MzMzM2MtMS4xMTk3OSwtMTIuMDY1NzYgLTEwLjg2MTk4LC0yMS43MjM5NiAtMjIuODQzNzUsLTIxLjcyMzk2ek03My45MDYyNSwxNC41NTcyOWgyNS4wODMzM2MzLjYzOTMzLDAgNi4zMjY4MywyLjg1NTQ3IDcuMzkwNjMsNi43MTg3NWgtNDAuNzYwNDJjMS4wMDc4MSwtMy44NjMyOCAzLjgwNzI5LC02LjcxODc1IDguMjg2NDYsLTYuNzE4NzV6TTI4LjY2NjY3LDQzdjExOC4yNWMwLDUuNzM4OTMgNS4wMTEwNywxMC43NSAxMC43NSwxMC43NWg5My44Mzg1NGM1LjczODkzLDAgMTAuNzUsLTUuMDExMDcgMTAuNzUsLTEwLjc1di0xMTguMjV6TTUwLjE2NjY3LDY0LjVoNy4xNjY2N3Y5My4xNjY2N2gtNy4xNjY2N3pNNzEuNjY2NjcsNjQuNWg3LjE2NjY3djkzLjE2NjY3aC03LjE2NjY3ek05My4xNjY2Nyw2NC41aDcuMTY2Njd2OTMuMTY2NjdoLTcuMTY2Njd6TTExNC42NjY2Nyw2NC41aDcuMTY2Njd2OTMuMTY2NjdoLTcuMTY2Njd6Ij48L3BhdGg+PC9nPjwvZz48L3N2Zz4=') center center/cover no-repeat;
+}
+
+.numbers {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.numbers__btn {
+    background: #fff;
+    width: 100px;
+    height: 50px;
+    border: 1px solid #d0d0d0;
+    border-right: 0.5px;
+    color: #6b6b6b;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 48px;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+
+.numbers__btn:last-child {
+    border-right: 1px solid #d0d0d0;
+}
+
+.numbers__btn:hover {
+    box-shadow: 3px 3px 20px gray;
+    border: none
+}
+
+.numbers__btn-active {
+    background: #d0d0d0;
+}
